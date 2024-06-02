@@ -1,0 +1,37 @@
+{
+  "name": "macos-prevent-sleep",
+  "description": "macOS prevent sleep",
+  "version": "1.0.0",
+  "main": "./src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FARUK-YILDIRIM/macos-prevent-sleep"
+  },
+  "bugs": {
+    "url": "https://github.com/FARUK-YILDIRIM/macos-prevent-sleep/issues"
+  },
+  "keywords": ["macos","prevent sleep"],
+  "author": "Faruk YILDIRIM",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^30.0.9",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.softalika.macos-prevent-sleep",
+    "productName": "MacOS Prevent Sleep",
+    "mac": {
+      "icon": "./assets/app-icon.png",
+      "category": "public.app-category.utilities",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    }
+  }
+}
+
